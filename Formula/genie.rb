@@ -1,20 +1,20 @@
 class Genie < Formula
   desc "A command line shell for using LLMs tools in the command line"
   homepage "https://github.com/grahambrooks/genie"
-  version "0.1.5"
+  version "0.2.0"
   if OS.mac?
     if Hardware::CPU.arm?
-      url "https://github.com/grahambrooks/genie/releases/download/0.1.5/genie-aarch64-apple-darwin.tar.xz"
-      sha256 "66ef9a02887910f1629e2b1e57a2c3cafdd4d48bfb12e998649dab55c187c362"
+      url "https://github.com/grahambrooks/genie/releases/download/0.2.0/genie-aarch64-apple-darwin.tar.xz"
+      sha256 "85249e48f520c9355f33e84206ed4766c43d739ad3940595ab68f3f2d6524434"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/grahambrooks/genie/releases/download/0.1.5/genie-x86_64-apple-darwin.tar.xz"
-      sha256 "061af2a5e7de939316f87eb552177d39e92ba5d0c99f4a16bfd19f63e3446242"
+      url "https://github.com/grahambrooks/genie/releases/download/0.2.0/genie-x86_64-apple-darwin.tar.xz"
+      sha256 "a64e747f3f31e8b1f588fdd112bfe22fc5fdde0da10d58be24c51e1a1af3d89d"
     end
   end
   if OS.linux? && Hardware::CPU.intel?
-    url "https://github.com/grahambrooks/genie/releases/download/0.1.5/genie-x86_64-unknown-linux-gnu.tar.xz"
-    sha256 "2bb083514cc75a018a5004336212ac35b92270432572aa6d3b0d60c30dc0b70a"
+    url "https://github.com/grahambrooks/genie/releases/download/0.2.0/genie-x86_64-unknown-linux-gnu.tar.xz"
+    sha256 "12446c2d99d1d3be9fcab92f33c50085cc1425afa8a85fa9258ef6f2337a35a2"
   end
   license "MIT"
 
